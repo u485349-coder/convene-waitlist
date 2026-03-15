@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convene | Intentional Dating, Real Follow-Through</title>
+    <meta
+      name="description"
+      content="Convene is a trust-weighted social and dating app built for people who actually want to meet. Join the waitlist."
+    />
+    <meta name="theme-color" content="#31524a" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">Convene</a>
+        <a class="header-link" href="#waitlist">Join Waitlist</a>
+      </header>
+
+      <main id="top">
+        <section class="section hero">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">Trust-weighted social + dating</p>
+
+            <!-- Customize the core headline and subheadline here. -->
+            <h1>Intentional dating starts when people actually follow through.</h1>
+            <p class="hero-text">
+              Convene helps nearby people move from mutual interest to real
+              plans, small public gatherings, and better opportunities earned
+              through reliability.
+            </p>
+
+            <form
+              id="hero-form"
+              class="waitlist-form compact-form"
+              action="https://formspree.io/f/mjgaegzy"
+              method="POST"
+              data-waitlist-form
+              data-form-message="hero"
+            >
+              <input type="hidden" name="source" value="hero" />
+              <label class="sr-only" for="hero-email">Email address</label>
+              <input
+                id="hero-email"
+                name="email"
+                type="email"
+                placeholder="Email address"
+                autocomplete="email"
+                required
+              />
+              <button class="button-primary" type="submit">
+                Join Waitlist
+              </button>
+            </form>
+
+            <div
+              class="form-message"
+              data-form-message-panel="hero"
+              aria-live="polite"
+              hidden
+            ></div>
+
+            <div class="success-panel" data-success-panel hidden>
+              Thanks for joining. We'll reach out as Convene opens in more
+              cities.
+            </div>
+
+            <div class="hero-actions">
+              <a class="secondary-link" href="#learn-more">Learn More</a>
+              <p class="helper-text">
+                Connected to Formspree. Update the form action if your endpoint
+                changes later.
+              </p>
+            </div>
+          </div>
+
+          <aside class="hero-panel card" data-reveal>
+            <div class="hero-panel-top">
+              <p class="panel-kicker">Built for people who mean it</p>
+              <h2 class="panel-title">
+                A better signal than endless matching and vague plans.
+              </h2>
+              <p class="panel-copy">
+                Convene favors momentum over noise: thoughtful discovery, clear
+                coordination, and trust that compounds when people actually show
+                up.
+              </p>
+            </div>
+
+            <div class="signal-grid">
+              <article class="signal-card">
+                <h3>Smaller circles</h3>
+                <p>Limited discovery keeps attention intentional.</p>
+              </article>
+              <article class="signal-card">
+                <h3>Real plans</h3>
+                <p>Matches are built to move toward an actual meet-up.</p>
+              </article>
+              <article class="signal-card">
+                <h3>Public events</h3>
+                <p>Low-pressure social moments create better first meetings.</p>
+              </article>
+              <article class="signal-card">
+                <h3>Trust compounds</h3>
+                <p>Reliability increases future visibility and opportunity.</p>
+              </article>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section" id="learn-more">
+          <div class="section-intro" data-reveal>
+            <p class="eyebrow">Why Convene</p>
+            <h2>Less swipe fatigue. More real-world momentum.</h2>
+          </div>
+
+          <div class="positioning-grid">
+            <article class="card prose-card" data-reveal>
+              <!-- Customize the positioning copy below if the product story evolves. -->
+              <p>
+                Most dating apps reward availability theater: endless browsing,
+                low-stakes messaging, and a lot of energy spent in
+                talking-stage purgatory.
+              </p>
+              <p>
+                That leaves people stuck between swipe fatigue, ghosting, and
+                vague "we should hang sometime" momentum that never becomes a
+                real plan.
+              </p>
+              <p>
+                Convene is built for people who actually want to meet. It helps
+                nearby active people discover each other, coordinate clearly,
+                and earn stronger visibility by respecting other people's time.
+              </p>
+            </article>
+
+            <article class="card pain-card" data-reveal>
+              <p class="mini-label">The friction we're fixing</p>
+              <ul class="pill-list">
+                <li>Swipe fatigue</li>
+                <li>Ghosting</li>
+                <li>Talking-stage purgatory</li>
+                <li>Low follow-through</li>
+                <li>Profiles that never become plans</li>
+                <li>Weak social trust signals</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-intro" data-reveal>
+            <p class="eyebrow">How It Works</p>
+            <h2>From nearby discovery to earned momentum.</h2>
+          </div>
+
+          <div class="steps-grid">
+            <article class="card step-card" data-reveal>
+              <span class="step-number">01</span>
+              <h3>Discover nearby active people</h3>
+              <p>
+                See people who are participating now, not endless inactive
+                profiles sitting in a queue.
+              </p>
+            </article>
+
+            <article class="card step-card" data-reveal>
+              <span class="step-number">02</span>
+              <h3>Match and coordinate</h3>
+              <p>
+                Move from mutual interest to clear plans with less ambiguity and
+                less endless back-and-forth.
+              </p>
+            </article>
+
+            <article class="card step-card" data-reveal>
+              <span class="step-number">03</span>
+              <h3>Meet through real plans or small public events</h3>
+              <p>
+                Choose intentional first meetings that feel grounded, social,
+                and easier to follow through on.
+              </p>
+            </article>
+
+            <article class="card step-card" data-reveal>
+              <span class="step-number">04</span>
+              <h3>Reliability improves future opportunity</h3>
+              <p>
+                Following through becomes part of your signal, helping dependable
+                people rise over time.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-intro" data-reveal>
+            <p class="eyebrow">Key Features</p>
+            <h2>Designed for intentional connection, not endless availability.</h2>
+          </div>
+
+          <div class="features-grid">
+            <article class="card feature-card" data-reveal>
+              <h3>Limited daily discoverability</h3>
+              <p>
+                Smaller, more considered visibility keeps the experience focused
+                and human.
+              </p>
+            </article>
+
+            <article class="card feature-card" data-reveal>
+              <h3>Curated weekly matches</h3>
+              <p>
+                A lighter cadence supports better attention and more meaningful
+                decisions.
+              </p>
+            </article>
+
+            <article class="card feature-card" data-reveal>
+              <h3>Small public social events</h3>
+              <p>
+                Optional events create easy first meetings without forcing
+                high-pressure chemistry tests.
+              </p>
+            </article>
+
+            <article class="card feature-card" data-reveal>
+              <h3>Trust and reliability system</h3>
+              <p>
+                Showing up matters, and the app reflects that over time.
+              </p>
+            </article>
+
+            <article class="card feature-card" data-reveal>
+              <h3>Social + dating opportunities</h3>
+              <p>
+                Built for romance, friendship, and the kind of local circle that
+                makes meeting easier.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="waitlist">
+          <div class="waitlist-shell card" data-reveal>
+            <div class="waitlist-copy">
+              <p class="eyebrow">Join The Waitlist</p>
+              <h2>Be early in your city.</h2>
+              <p>
+                Convene is rolling out carefully. Tell us where you are and what
+                you're hoping to find so we can launch with stronger local
+                density.
+              </p>
+            </div>
+
+            <div>
+              <form
+                id="waitlist-form"
+                class="waitlist-form detailed-form"
+                action="https://formspree.io/f/mjgaegzy"
+                method="POST"
+                data-waitlist-form
+                data-form-message="waitlist"
+              >
+                <input type="hidden" name="source" value="waitlist" />
+
+                <div class="field-grid">
+                  <div class="field">
+                    <label for="waitlist-email">Email</label>
+                    <input
+                      id="waitlist-email"
+                      name="email"
+                      type="email"
+                      placeholder="you@example.com"
+                      autocomplete="email"
+                      required
+                    />
+                  </div>
+
+                  <div class="field">
+                    <label for="waitlist-city">City</label>
+                    <input
+                      id="waitlist-city"
+                      name="city"
+                      type="text"
+                      placeholder="Brooklyn, New York"
+                      autocomplete="address-level2"
+                      required
+                    />
+                  </div>
+
+                  <div class="field field-full">
+                    <label for="waitlist-intent">
+                      What are you looking for?
+                      <span class="optional-label">Optional</span>
+                    </label>
+                    <select id="waitlist-intent" name="looking_for">
+                      <option value="">Select an option</option>
+                      <option value="Dating">Dating</option>
+                      <option value="Serious relationship">
+                        Serious relationship
+                      </option>
+                      <option value="Friends / social circle">
+                        Friends / social circle
+                      </option>
+                      <option value="Open to both">Open to both</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button class="button-primary button-wide" type="submit">
+                  Join Waitlist
+                </button>
+              </form>
+
+              <div
+                class="form-message"
+                data-form-message-panel="waitlist"
+                aria-live="polite"
+                hidden
+              ></div>
+
+              <div class="success-panel" data-success-panel hidden>
+                You're on the list. We'll reach out when Convene is ready to
+                open up in your area.
+              </div>
+
+              <p class="helper-text helper-text-tight">
+                No spam. Just launch updates and early access by city.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Convene</p>
+
+        <!-- Replace these placeholder footer links when you add real pages. -->
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Contact</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
