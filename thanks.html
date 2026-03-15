@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convene | Thanks</title>
+    <style>
+      :root {
+        --bg-1: #0b1115;
+        --bg-2: #111a20;
+        --bg-3: #1b2b30;
+        --card: rgba(17, 24, 29, 0.84);
+        --card-border: rgba(255, 255, 255, 0.08);
+        --text: #f2f4f2;
+        --muted: #a9b2b3;
+        --accent: #7fd0b4;
+        --accent-strong: #4db390;
+        --input-bg: rgba(255, 255, 255, 0.05);
+        --shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+        --radius-xl: 28px;
+        --radius-lg: 18px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(127, 208, 180, 0.12), transparent 30%),
+          radial-gradient(circle at bottom right, rgba(84, 125, 164, 0.16), transparent 32%),
+          linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 55%, var(--bg-3) 100%);
+      }
+
+      .card {
+        width: min(100%, 760px);
+        padding: 40px;
+        border: 1px solid var(--card-border);
+        border-radius: var(--radius-xl);
+        background: var(--card);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(18px);
+        animation: fade-up 700ms ease both;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        margin-bottom: 18px;
+        padding: 8px 12px;
+        border: 1px solid rgba(127, 208, 180, 0.22);
+        border-radius: 999px;
+        background: rgba(127, 208, 180, 0.08);
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.4rem, 6vw, 4.3rem);
+        line-height: 0.98;
+        letter-spacing: -0.05em;
+      }
+
+      .subtext {
+        max-width: 48ch;
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.7;
+      }
+
+      .share-section {
+        margin-top: 34px;
+        padding: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        border-radius: var(--radius-lg);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .share-section h2 {
+        margin: 0 0 10px;
+        font-size: 1.15rem;
+        letter-spacing: -0.03em;
+      }
+
+      .share-section p {
+        margin: 0 0 18px;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .referral-input {
+        width: 100%;
+        padding: 16px 18px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 14px;
+        background: var(--input-bg);
+        color: var(--text);
+        font-size: 0.98rem;
+        outline: none;
+        transition:
+          border-color 180ms ease,
+          box-shadow 180ms ease,
+          transform 180ms ease;
+      }
+
+      .referral-input:hover,
+      .referral-input:focus {
+        border-color: rgba(127, 208, 180, 0.34);
+        box-shadow: 0 0 0 4px rgba(127, 208, 180, 0.08);
+      }
+
+      .hint {
+        margin-top: 10px;
+        color: #8f989a;
+        font-size: 0.92rem;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 30px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 52px;
+        padding: 0 20px;
+        border-radius: 14px;
+        text-decoration: none;
+        font-weight: 700;
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease,
+          background-color 180ms ease,
+          border-color 180ms ease;
+      }
+
+      .button-primary {
+        background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+        color: #062018;
+        box-shadow: 0 18px 40px rgba(77, 179, 144, 0.22);
+      }
+
+      .button-secondary {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--text);
+      }
+
+      .button:hover,
+      .button:focus-visible {
+        transform: translateY(-2px);
+      }
+
+      .button-primary:hover,
+      .button-primary:focus-visible {
+        box-shadow: 0 22px 46px rgba(77, 179, 144, 0.28);
+      }
+
+      .button-secondary:hover,
+      .button-secondary:focus-visible {
+        border-color: rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      @keyframes fade-up {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 16px;
+        }
+
+        .card {
+          padding: 28px 22px;
+        }
+
+        .share-section {
+          padding: 18px;
+        }
+
+        .actions {
+          flex-direction: column;
+        }
+
+        .button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="eyebrow">Convene Waitlist</div>
+      <h1>You're on the waitlist 🎉</h1>
+      <p class="subtext">
+        Thanks for joining Convene. We will let you know as soon as we launch
+        and when access starts opening in more cities.
+      </p>
+
+      <section class="share-section">
+        <h2>Help us grow the list</h2>
+        <p>
+          Share Convene with a friend who wants more intentional dating and
+          real-world follow-through. The stronger the waitlist, the better the
+          launch.
+        </p>
+        <input
+          class="referral-input"
+          type="text"
+          value="https://u485349-coder.github.io/convene-waitlist/"
+          readonly
+          aria-label="Referral link"
+        />
+        <p class="hint">Tap or click the link to highlight it for copying.</p>
+      </section>
+
+      <div class="actions">
+        <a class="button button-primary" href="index.html">Back to Homepage</a>
+        <a
+          class="button button-secondary"
+          href="https://u485349-coder.github.io/convene-waitlist/"
+        >
+          Open Share Link
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
